@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #2b2b2b;
+    --background---secondary: #3b3b3b;
+    --caption--label-text: #858584;
+    --text: #fff;
+    --call-to-action: #a259ff;
+    --blue-accent: #377df7;
+    --red-accent: #ff7262;
+}
+
+nav {
+    display: flex;
+    padding: 34px 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background);
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.Logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.Logo h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.list button {
+    display: flex;
+    align-items: center;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+    background: var(--call-to-action);
+    border-radius: 20px;
+    padding: 0 30px;
+    width: 152px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    background: var(--background);
+    padding: 80px 115px;
+    height: 704px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-up {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 510px;
+    height: 347px;
+}
+
+.hero-up h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.hero-up p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.hero-down {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-down button {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 50px;
+    width: 224px;
+    height: 60px;
+    background: var(--call-to-action);
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+}
+
+.hero-down-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-down-column-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hero-down-column-item h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.hero-down-column-item p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+main {
+    width: 100%;
+    background: var(--background);
+}
+
+#Marketplace {
+    width: 100%;
+    background: var(--background);
+    padding: 80px 115px;
+    height: 850px;
+}
+
+
+.marketplace-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.marketplace-up h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.marketplace-up p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.marketplace-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marketplace-down-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.items h3 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.items p {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+
+}
+
+#Rankings {
+    width: 100%;
+    background: var(--background);
+    padding: 80px 115px;
+    height: 1200px;
+}
+
+.rankings-up {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.rankings-up-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.rankings-up-left h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.rankings-up-left p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.rankings-up button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    border: 2px solid var(--call-to-action);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 247px;
+    height: 60px;
+    background: var(--background);
+    gap: 12px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text);
+}
+
+.rankings-down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    width: 100%;
+}
+
+.rankings-down-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 240px;
+    height: 238px;
+    background: var(--background---secondary);
+}
+
+.rankings-down-item-up {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--background);
+    align-items: center;
+    justify-content: center;
+}
+
+.number h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--caption---label-text);
+}
+
+.rankings-down-item-down {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+}
+
+.rankings-down-item-down h2 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.rankings-down-item-down-column {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-sales {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: var(--caption---label-text);
+}
+
+.total-sales-amount {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text);
+}
+
+#Connect {
+    width: 100%;
+    background: var(--background);
+    padding: 80px 115px;
+    height: 1000px;
+}
+
+.container h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: var(--text);
+    margin-bottom: 60px;
+}
+.connect-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap:65px;
+}
