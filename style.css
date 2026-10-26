@@ -19,11 +19,15 @@ html {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
     padding: 34px 50px;
     align-items: center;
     justify-content: space-between;
     background: var(--background);
+    z-index: 1000;
 }
 
 .Logo {
@@ -93,11 +97,14 @@ nav {
     background: var(--background);
     padding: 80px 115px;
     height: 704px;
+    margin-top: 128px;
+   
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
+   
 
 }
 
@@ -341,6 +348,7 @@ main {
     flex-wrap: wrap;
     gap: 65px;
     width: 100%;
+   
 }
 
 .rankings-down-item {
