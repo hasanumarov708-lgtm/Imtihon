@@ -292,7 +292,6 @@ main {
 
 .rankings-up {
     display: flex;
-    position: relative;
     justify-content: space-between;
     margin-bottom: 60px;
 }
@@ -300,13 +299,14 @@ main {
 .rankings-up-left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     text-align: left;
+    width: 50%;
 }
 
 .rankings-up-left h1 {
     font-family: var(--second-family);
     font-weight: 600;
+    margin:0;
     font-size: 38px;
     line-height: 120%;
     text-transform: capitalize;
@@ -315,14 +315,19 @@ main {
 
 .rankings-up-left p {
     font-family: var(--second-family);
+    margin:0;
     font-weight: 400;
     font-size: 22px;
     line-height: 160%;
     text-transform: capitalize;
     color: var(--text);
 }
+.rankings-up-right{
+    position: relative;
+    width: 50%;
+}
 
-.rankings-up button {
+.rankings-up-right button {
     position: absolute;
     right: 0;
     bottom: 0;
